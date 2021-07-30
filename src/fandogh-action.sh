@@ -2,3 +2,4 @@
 
 echo "username -> $FANDOGH_USERNAME"
 echo "password -> $FANDOGH_PASSWORD"
+printenv

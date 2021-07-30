@@ -17,7 +17,8 @@ runs:
   using: "composite"
   steps:
     - run: |
-        ./${{ github.action_path }}/src/fandogh-action.sh
+        cd ${{ github.action_path }}/src
+        ./fandogh-action.sh
       env:
         FANDOGH_USERNAME: ${{ inputs.username }}
         FANDOGH_PASSWORD: ${{ inputs.password }}
