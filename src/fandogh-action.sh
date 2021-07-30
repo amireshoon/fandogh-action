@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
-echo $1
+pip install fandogh_cli --upgrade
+
+fandogh --version
+
+fandogh login --username=$1 --password=$2
