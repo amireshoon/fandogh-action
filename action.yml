@@ -5,4 +5,18 @@ branding:
   color: blue
   icon: minimize-2
 
-
+inputs:
+  username:
+    description: 'Fandogh account username'
+    required: true
+  password:
+    description: 'Fandogh account password'
+    required: true
+  
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        cd ${{ github.action_path }}/src
+        sudo bash fandogh-action.sh
+      shell: bash
