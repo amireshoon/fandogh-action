@@ -16,6 +16,10 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: |
+    - name: Fandogh action
+      run: |
         sudo bash -ex ${{ github.action_path }}/src/fandogh-action.sh ${{ inputs.username }} ${{ inputs.password }}
       shell: bash
+    - name: Fandogh login
+      run: fandogh login --username=${{ inputs.username }} --password=${{ inputs.password }}
+  
