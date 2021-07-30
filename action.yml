@@ -22,4 +22,5 @@ runs:
       shell: bash
     - name: Fandogh login
       run: fandogh login --username=${{ inputs.username }} --password=${{ inputs.password }}
+      shell: bash
   
