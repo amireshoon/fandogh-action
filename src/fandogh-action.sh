@@ -1,5 +1,4 @@
-echo "Hello"
-for var in "$@"
-do
-    echo "$var"
-done
+echo "username -> "
+echo FANDOGH_USERNAME
+echo " password ->"
+echo FANDOGH_USERNAME

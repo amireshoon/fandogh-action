@@ -18,7 +18,7 @@ runs:
   steps:
     - run: |
         cd ${{ github.action_path }}/src/fandogh-action.sh
-      args:
-        - ${{ inputs.username }}
-        - ${{ inputs.password }}
+      env:
+        FANDOGH_USERNAME: ${{ inputs.username }}
+        FANDOGH_PASSWORD: ${{ inputs.password }}
       shell: bash
