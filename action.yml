@@ -17,8 +17,5 @@ runs:
   using: "composite"
   steps:
     - run: |
-        sudo bash -ex ${{ github.action_path }}/src/fandogh-action.sh
-      env:
-        FANDOGH_USERNAME: ${{ inputs.username }}
-        FANDOGH_PASSWORD: ${{ inputs.password }}
+        sudo bash -ex ${{ github.action_path }}/src/fandogh-action.sh ${{ inputs.username }} ${{ inputs.password }}
       shell: bash
