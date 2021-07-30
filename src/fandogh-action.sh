@@ -1,4 +1,2 @@
-echo "username -> "
-echo FANDOGH_USERNAME
-echo " password ->"
-echo FANDOGH_USERNAME
+echo "username -> $FANDOGH_USERNAME"
+echo "password -> $FANDOGH_USERNAME"
