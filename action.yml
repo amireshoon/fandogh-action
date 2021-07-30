@@ -1,0 +1,8 @@
+name: 'Fandogh action'
+description: 'Fandogh CI/CD action'
+author: Amirhossein Meydani
+branding:
+  color: blue
+  icon: minimize-2
+
+
