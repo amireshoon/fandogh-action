@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pip install fandogh_cli --upgrade
+# pip install fandogh_cli --upgrade
 
 # fandogh --version
 

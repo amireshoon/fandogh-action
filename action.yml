@@ -18,7 +18,7 @@ runs:
   steps:
     - name: Fandogh action
       run: |
-        sudo bash -ex ${{ github.action_path }}/src/fandogh-action.sh ${{ inputs.username }} ${{ inputs.password }}
+        pip install fandogh_cli --upgrade
       shell: bash
     - name: Fandogh login
       run: fandogh login --username=${{ inputs.username }} --password=${{ inputs.password }}
